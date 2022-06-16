@@ -46,6 +46,12 @@ def SomeFunctionality():
 	response={}
 	logger(request,response)
 	return "<h1>search service %s</H1>"%(rand)
+	
+@app.route('/api/search/OtherRoute', methods=['POST'])
+def Otherfunctionality():
+	response={}
+	logger(request,response)
+	return "<h1>Some Response!</H1>"
 
 def logger(request,response):
 	tmp='headers:{'
